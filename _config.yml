@@ -3,7 +3,7 @@ title:       Create.net Product Team Blog
 email:       
 author:      Create.net
 description: "The Create.net product team blog."
-baseurl:     ""
+baseurl:     "/blog"
 url:         "http://developers.create.net/blog/"
 
 # Google analytics
