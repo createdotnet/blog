@@ -4,6 +4,7 @@ title:      Page Builder v1.0
 date:       2015-01-07 15:50
 summary:    For the past two months we've been working on a new drag and drop user interface to allow our customers to create responsive layouts and content for their websites...
 categories: feature
+author: aidan
 ---
 
 For the past two months we've been working on a new user interface to allow our customers to create responsive layouts and content for their websites, dubbed "Page Builder". 

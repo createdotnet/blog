@@ -37,3 +37,51 @@ permalink:    pretty
 paginate:     3
 sass:
   compressed: true
+
+
+authors:
+  aidan:
+    name: Aidan Threadgold
+    github: aidanthreadgold
+    twitter: aidanthreadgold
+    job: Developer
+  andrada:
+    name: Andrada Focsa
+    github: 
+    twitter: 
+    job: Developer
+  andy:
+    name: Andy Hansen
+    github: 
+    twitter: 
+    job: Designer
+  benjamin:
+    name: Benjamin Parry
+    github: 
+    twitter: 
+    job: Front-end Designer
+  ed:
+    name: Ed Bailey
+    github: 
+    twitter: 
+    job: Developer
+  ed:
+    name: Ian Booth
+    github: 
+    twitter: 
+    job: Product Manager
+  joel:
+    name: Joel Day
+    github: 
+    twitter: 
+    job: Senior Developer
+  matt:
+    name: Matt Greenfield
+    github: 
+    twitter: 
+    job: Designer
+  simon:
+    name: Simon Kimber
+    github: 
+    twitter: 
+    job: CTO/Devops
