@@ -20,12 +20,13 @@ Page Builder has been designed to:
 ## Stage 1 - Planning
 ### User Flows and Wireframes
 Our User Experience designer kicked of this project by researching and creating a series of user-flows for each aspect of Page Builder - 
+
 1. Dragging new content into the page
 2. Reordering, modifying and deleting said content
 
 Once those user flows has been finalised, we turned to creating wireframes of the interface.
 
-> [pic of all those damn wirefreames]
+![Wireframes and user flow photo]({{ site.baseurl }}/images/posts/pagebuilder-wireuser.jpg)
 
 ### Drag and Drop
 From the outset, we knew the biggest challenge on this project would be the drag and drop functionality. It needed to be as smooth and as glitch-free as possible for our users. With this in mind, we set about researching the best Javascript drag and drop library available to us (we didn't have the time to write our own).
@@ -51,8 +52,6 @@ Once we had our user flows, wireframes and decided which drag and drop library t
 
 This went surprisingly well, with hardly any problems that we couldn't iron out relatively quickly (with the help of Google and Stackoverflow). This then left us free to focus a lot more time on other functionality and the user interface later on in the project - as we were able to use much of the code (after a bit of a refactor) from the prototype in the main codebase.
 
-> [image of various prototypes for dragging]
-
 ## Stage 3 - Development
 The majority of Page Builder was built using vanilla Javascript and a small amount of PHP to handle saving, loading and publishing of the page. We also made use of Grunt to compile the various modularised Javascript files (using uglify) and SASS for compiling the components we are using from our pattern library. 
 
@@ -63,7 +62,7 @@ For development, we broke Page Builder down into four parts -
 1. Dragging and Dropping of the containers and content blocks
 1. Panels for displaying/editing container and content block settings
 
->[diagram of containers and content block markup hierarchy]
+![Container and Content Block hierarchy diagram]({{ site.baseurl }}/images/posts/pagebuilder-container-cb-diagram.jpg)
 
 In keeping with our ethos of avoiding using jQuery the only part of the Page Builder code that uses it is the drag and drop functionality, we made a point of ensuring everything else was vanilla Javascript. 
 
@@ -90,7 +89,9 @@ During our testing, users repeatedly clicked "Replace" thinking it would have th
 
 Our immediate solution to this was to reposition the "Done" button to the top right, and give it a fixed position so it would overlay the content if the user scrolled. We also changed the word "Replace" to "Switch" and enhanced the styling of the buttons. We will be gathering more feedback to determine if this is the best solution.
 
-> [image of panel with buttons before/after]
+#### Before and after:
+
+![Screenshot of buttons before]({{ site.baseurl }}/images/posts/pagebuilder-usertesting-before.png) ![Screenshot of buttons after]({{ site.baseurl }}/images/posts/pagebuilder-usertesting-after.png)
 
 # Wrapping Up
 Page Builder is currently only available as a beta feature to our users, on a request basis so that we can gather feedback and ensure it's bug free before launching it to our whole customer base.
