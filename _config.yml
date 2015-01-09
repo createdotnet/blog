@@ -7,7 +7,7 @@ baseurl:     "/blog"
 url:         "http://developers.create.net/blog/"
 
 # Google analytics
-google_analytics:
+google_analytics: UA-58388268-1
 
 # Optional features
 animated:           false
