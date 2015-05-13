@@ -1,17 +1,17 @@
 ---
 layout:     post
-title:      Page Builder v1.0
+title:      Pagebuilder v1.0
 date:       2015-01-07 15:50
 summary:    For the past two months we've been working on a new drag and drop user interface to allow our customers to create responsive layouts and content for their websites...
 categories: feature
 author: aidan
 ---
 
-For the past two months we've been working on a new user interface to allow our customers to create responsive layouts and content for their websites, dubbed "Page Builder". 
+For the past two months we've been working on a new user interface to allow our customers to create responsive layouts and content for their websites, dubbed "Pagebuilder". 
 
 Our current method of creating content relies exclusively on the TinyMCE text editor, and we've long advised our users to create their layouts with tables within the editor. This method of creating content has resulted in numerous problems for us in the product team, notably how to make table based content reflow in a responsive website. And for our customer account managers, who are frequently asked how to get images and text aligned next to each other in table cells, pixel-perfect.
 
-Page Builder has been designed to:
+Pagebuilder has been designed to:
 
 1. Provide a simple drag and drop interface to add types of content (i.e. images, text and forms) to a page
 2. To dynamically adjust the layout of the page based on the content the user has added
@@ -19,7 +19,7 @@ Page Builder has been designed to:
 
 ## Stage 1 - Planning
 ### User Flows and Wireframes
-Our User Experience designer kicked of this project by researching and creating a series of user-flows for each aspect of Page Builder - 
+Our User Experience designer kicked of this project by researching and creating a series of user-flows for each aspect of Pagebuilder - 
 
 1. Dragging new content into the page
 2. Reordering, modifying and deleting said content
@@ -53,9 +53,9 @@ Once we had our user flows, wireframes and decided which drag and drop library t
 This went surprisingly well, with hardly any problems that we couldn't iron out relatively quickly (with the help of Google and Stackoverflow). This then left us free to focus a lot more time on other functionality and the user interface later on in the project - as we were able to use much of the code (after a bit of a refactor) from the prototype in the main codebase.
 
 ## Stage 3 - Development
-The majority of Page Builder was built using vanilla Javascript and a small amount of PHP to handle saving, loading and publishing of the page. We also made use of Grunt to compile the various modularised Javascript files (using uglify) and SASS for compiling the components we are using from our pattern library. 
+The majority of Pagebuilder was built using vanilla Javascript and a small amount of PHP to handle saving, loading and publishing of the page. We also made use of Grunt to compile the various modularised Javascript files (using uglify) and SASS for compiling the components we are using from our pattern library. 
 
-For development, we broke Page Builder down into four parts -
+For development, we broke Pagebuilder down into four parts -
 
 1. Containers
 1. Content Blocks
@@ -64,7 +64,7 @@ For development, we broke Page Builder down into four parts -
 
 ![Container and Content Block hierarchy diagram]({{ site.baseurl }}/images/posts/pagebuilder-container-cb-diagram.jpg)
 
-In keeping with our ethos of avoiding using jQuery the only part of the Page Builder code that uses it is the drag and drop functionality, we made a point of ensuring everything else was vanilla Javascript. 
+In keeping with our ethos of avoiding using jQuery the only part of the Pagebuilder code that uses it is the drag and drop functionality, we made a point of ensuring everything else was vanilla Javascript. 
 
 We did this to decrease reliance on an external library for a key feature, and because we believe it's better (although, not always) to call a native Javascript function than having to call a jQuery function, which often in turn calls a number of other jQuery functions to then run the native Javascript code.
 
@@ -94,6 +94,6 @@ Our immediate solution to this was to reposition the "Done" button to the top ri
 ![Screenshot of buttons before]({{ site.baseurl }}/images/posts/pagebuilder-usertesting-before.png) ![Screenshot of buttons after]({{ site.baseurl }}/images/posts/pagebuilder-usertesting-after.png)
 
 # Wrapping Up
-Page Builder is currently only available as a beta feature to our users, on a request basis so that we can gather feedback and ensure it's bug free before launching it to our whole customer base.
+Pagebuilder is currently only available as a beta feature to our users, on a request basis so that we can gather feedback and ensure it's bug free before launching it to our whole customer base.
 
-Going forward our plan is to add and refine functionality based on our users feedback during the beta stage, and to integrate more of our other features into Page Builder so the user doesn't have to navigate away from the page, for example to create forms.
+Going forward our plan is to add and refine functionality based on our users feedback during the beta stage, and to integrate more of our other features into Pagebuilder so the user doesn't have to navigate away from the page, for example to create forms.
